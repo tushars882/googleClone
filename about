@@ -1,0 +1,19 @@
+---------------STARTING----------------------------------------------
+-We have made use of react-router package initially 
+-React router helps us to direct to differnt pages based on the request."It basically helps in displaying multiple views in a single page web application"
+
+- we have made use of Routes (Switch initially) Which only renders the page we request at that time rather than rendering every page described in the path beacuse it will match char by char and will get "/" first , hereby rendering everytime the same page.
+
+-We have made use of google custom search API which helps us to retrieve search in JSON formatand then react custom icon library
+-Info about API=>
+            --There are basically 3 types of authentication 
+            1)http basic- On this normally login credentials are required which is risky as of "man in the middle attack " can steal the header of the login.It is slow and insecure
+
+            2)API keys-It is created whenevr the user creats an account and everytime it is required whenever the user makes a call to the api.Insecure
+
+            3)0Auth- everytime wheneveer a call is made there is a distinct token generated which is differnet in every call thus making it higly secured
+
+
+-We have created a second view page for google for searching our request where we will send our API request
+-For Routing we have used location and "navigation" instead of "history.push"
+in the search we have passed the old state use location.state and then we have used axios to get the api equest in which we have used our key, cxKey and state (in the provided url from google custom search api)
