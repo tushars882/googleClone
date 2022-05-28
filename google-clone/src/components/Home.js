@@ -3,7 +3,7 @@ import { FaSistrix, FaMicrophone } from "react-icons/fa";
 // import { useState } from 'react';
 import {useNavigate} from "react-router-dom"
 import axios from 'axios';
-import {key,cxKey} from "../API"
+import {key,cxKey} from "../API.js"
 
 function Home(props) {
   const [state,setState]=React.useState("");
@@ -25,7 +25,7 @@ function Home(props) {
             <div className="home_group">
               <input type="submit" value="Google search" className="home_btn" />
             </div>
-            <FaMicrophone className='microphone' />
+            <FaMicrophone className='microphone'/>
           </form>
         </div>
       </div>

@@ -108,12 +108,14 @@ color: #4285f4;
         margin-left: -2.5%;
         top: 38.25%;
     color: #4285f4;
+    cursor: pointer;
 }
 .find_page_icon{
     position: absolute;
     margin-left: -4.8%;
     top: 38%;
     color: #4285f4;
+    cursor: pointer;
     /* border-left: 0.3px solid #5f6368; */
     
 

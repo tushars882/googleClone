@@ -3,9 +3,12 @@ import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import { FaSistrix, FaMicrophone } from "react-icons/fa";
 import { useState } from "react";
 import Home from "./Home";
-import { key, cxKey } from "../API";
+import { key, cxKey } from "../API.js";
 import axios from "axios";
 import Show from "./Show";
+
+
+
 
 export const Search = (props) => {
   const location = useLocation();
@@ -26,7 +29,7 @@ export const Search = (props) => {
     e.preventDefault();
     try {
       const response = await axios.get(
-        `https://www.googleapis.com/customsearch/v1?key=${key}&cx=${cxKey}&q=${location.state}`
+        `https://www.googleapis.com/customsearch/v1?key=${key}}&cx=${cxKey}&q=${location.state}`
       );
       if (response) {
         console.log(response.data.items, response.data.searchInformation);

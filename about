@@ -17,3 +17,5 @@
 -We have created a second view page for google for searching our request where we will send our API request
 -For Routing we have used location and "navigation" instead of "history.push"
 in the search we have passed the old state use location.state and then we have used axios to get the api equest in which we have used our key, cxKey and state (in the provided url from google custom search api)
+
+- Error code 400 bad request response status code 
